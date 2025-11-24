@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Delgado - Centro de Aprendizaje</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">🏢 CRM Delgado</div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-section-title">Modo</div>
+                <div class="sidebar-item active" onclick="cambiarRol('admin')">👨‍💼 Admin CRM</div>
+                <div class="sidebar-item" onclick="cambiarRol('cliente')">👤 Portal Cliente</div>
+            </div>
+
+            <div class="sidebar-section" id="admin-menu">
+                <div class="sidebar-section-title">Admin CRM</div>
+                <div class="sidebar-item active" onclick="mostrarSeccion('admin-inicio')">🏠 Inicio</div>
+                <div class="sidebar-item" onclick="mostrarSeccion('admin-dashboard')">📊 Dashboard</div>
+                <div class="sidebar-item" onclick="mostrarSeccion('admin-leads')">👥 Leads</div>
+                <div class="sidebar-item" onclick="mostrarSeccion('admin-clientes')">💼 Clientes</div>
+                <div class="sidebar-item" onclick="mostrarSeccion('admin-cotizaciones')">📄 Cotizaciones</div>
+                <div class="sidebar-item" onclick="mostrarSeccion('admin-reportes')">📈 Reportes</div>
+                <div class="sidebar-item" onclick="mostrarSeccion('admin-usuarios')">👨‍💻 Usuarios</div>
+            </div>
+
+            <div class="sidebar-section" id="cliente-menu" style="display: none;">
+                <div class="sidebar-section-title">Portal Cliente</div>
+                <div class="sidebar-item active" onclick="mostrarSeccion('cliente-inicio')">🏠 Inicio</div>
+                <div class="sidebar-item" onclick="mostrarSeccion('cliente-cotizaciones')">📄 Cotizaciones</div>
+                <div class="sidebar-item" onclick="mostrarSeccion('cliente-propiedades')">🏠 Propiedades</div>
+                <div class="sidebar-item" onclick="mostrarSeccion('cliente-perfil')">👤 Mi Perfil</div>
+            </div>
+        </aside>
+
+        <main class="main">
+            <!-- ADMIN SECTIONS -->
+            <div id="admin-inicio" class="content-section active">
+                <h1>Centro de Aprendizaje</h1>
+                <p class="subtitle">Sistema CRM Delgado - Gestión Inmobiliaria</p>
+
+                <div class="intro-card">
+                    <h2>👋 Bienvenido al CRM Delgado</h2>
+                    <p>Tu plataforma para gestionar leads, clientes, cotizaciones y reportes.</p>
+                </div>
+
+                <h2 class="section-title">Módulos de Aprendizaje</h2>
+                <div class="modules-grid">
+                    <div class="module-card" onclick="mostrarSeccion('admin-dashboard')">
+                        <div class="module-number">1</div>
+                        <h3>Dashboard</h3>
+                        <p>Visualiza métricas clave de tu negocio</p>
+                        <div class="module-link">Ver tutorial →</div>
+                    </div>
+                    <div class="module-card" onclick="mostrarSeccion('admin-leads')">
+                        <div class="module-number">2</div>
+                        <h3>Gestión de Leads</h3>
+                        <p>Captura y da seguimiento a prospectos</p>
+                        <div class="module-link">Ver tutorial →</div>
+                    </div>
+                    <div class="module-card" onclick="mostrarSeccion('admin-clientes')">
+                        <div class="module-number">3</div>
+                        <h3>Clientes</h3>
+                        <p>Administra tu cartera de clientes</p>
+                        <div class="module-link">Ver tutorial →</div>
+                    </div>
+                    <div class="module-card" onclick="mostrarSeccion('admin-cotizaciones')">
+                        <div class="module-number">4</div>
+                        <h3>Cotizaciones</h3>
+                        <p>Crea cotizaciones profesionales</p>
+                        <div class="module-link">Ver tutorial →</div>
+                    </div>
+                    <div class="module-card" onclick="mostrarSeccion('admin-reportes')">
+                        <div class="module-number">5</div>
+                        <h3>Reportes</h3>
+                        <p>Analiza datos y genera reportes</p>
+                        <div class="module-link">Ver tutorial →</div>
+                    </div>
+                    <div class="module-card" onclick="mostrarSeccion('admin-usuarios')">
+                        <div class="module-number">6</div>
+                        <h3>Usuarios</h3>
+                        <p>Gestiona tu equipo de trabajo</p>
+                        <div class="module-link">Ver tutorial →</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="admin-dashboard" class="content-section">
+                <div class="tutorial-content">
+                    <h2>📊 Dashboard</h2>
+                    <p>Tu centro de control con información de leads y oportunidades.</p>
+                    <h3>¿Qué verás?</h3>
+                    <ul>
+                        <li>📈 Leads Recientes - Últimos prospectos capturados en el sistema</li>
+                        <li>📊 Información de tu negocio - Datos consolidados</li>
+                    </ul>
+                    <h3>Pasos</h3>
+                    <ol>
+                        <li>Al ingresar, verás el dashboard automáticamente</li>
+                        <li>Observa los leads recientes en la sección principal</li>
+                        <li>Haz clic en "Actualizar" para refrescar los datos</li>
+                        <li>Accede a otros módulos desde el menú lateral</li>
+                    </ol>
+                    <div class="alert alert-info">💡 El dashboard se actualiza automáticamente con los últimos datos</div>
+                </div>
+            </div>
+
+            <div id="admin-leads" class="content-section">
+                <div class="tutorial-content">
+                    <h2>👥 Gestión de Leads</h2>
+                    <p>Los leads son tus prospectos. Captura, organiza y da seguimiento.</p>
+                    <h3>¿Qué es un Lead?</h3>
+                    <p>Persona interesada en tus servicios inmobiliarios.</p>
+                    <h3>Estados</h3>
+                    <ul>
+                        <li><strong>NUEVO:</strong> Recién capturado - Contactar en 24h</li>
+                        <li><strong>CONTACTADO:</strong> Ya fue contactado - Dar seguimiento</li>
+                        <li><strong>CALIFICADO:</strong> Con potencial - Crear oportunidad</li>
+                        <li><strong>GANADO:</strong> Convertido a cliente - Seguimiento post-venta</li>
+                    </ul>
+                    <h3>Cómo crear un Lead</h3>
+                    <ol>
+                        <li>Ve a "Leads" desde el menú</li>
+                        <li>Haz clic en "Nuevo Lead"</li>
+                        <li>Completa: nombre, correo, teléfono, empresa</li>
+                        <li>Selecciona la fuente</li>
+                        <li>Asigna un agente</li>
+                        <li>Guarda</li>
+                    </ol>
+                    <div class="alert alert-success">✅ Contacta leads nuevos dentro de 24h para mayor conversión</div>
+                </div>
+            </div>
+
+            <div id="admin-clientes" class="content-section">
+                <div class="tutorial-content">
+                    <h2>💼 Gestión de Contactos y Leads</h2>
+                    <p>Administra tu base de contactos y leads en el sistema.</p>
+                    <h3>¿Qué es un Contacto?</h3>
+                    <p>Un contacto es una persona interesada en tus servicios. Puede ser un lead (prospecto) o un cliente (ya ha comprado).</p>
+                    <h3>Información del Contacto</h3>
+                    <ul>
+                        <li>👤 Datos Personales - Nombre, apellido, correo, teléfono, DNI</li>
+                        <li>📍 Datos de Ubicación - Dirección, ciudad, departamento, provincia</li>
+                        <li>💼 Información Laboral - Empresa, cargo, departamento</li>
+                        <li>🏷️ Etiquetas - Clasificación personalizada</li>
+                        <li>📝 Notas - Información adicional y seguimiento</li>
+                    </ul>
+                    <h3>Cómo crear un Contacto</h3>
+                    <ol>
+                        <li>Ve a "Contactos" desde el menú</li>
+                        <li>Haz clic en "Nuevo Contacto"</li>
+                        <li>Completa los datos: nombre, correo, teléfono</li>
+                        <li>Agrega información adicional (empresa, ciudad, etc.)</li>
+                        <li>Asigna etiquetas si es necesario</li>
+                        <li>Guarda el contacto</li>
+                    </ol>
+                    <h3>Convertir Contacto a Lead</h3>
+                    <ol>
+                        <li>Selecciona un contacto</li>
+                        <li>Haz clic en "Convertir a Lead"</li>
+                        <li>Selecciona la fuente del lead</li>
+                        <li>Guarda los cambios</li>
+                    </ol>
+                    <h3>Etiquetas</h3>
+                    <p>Usa etiquetas para organizar y clasificar tus contactos. Puedes crear etiquetas personalizadas según tus necesidades.</p>
+                    <div class="alert alert-info">💡 Mantén los datos del contacto actualizados para mejor seguimiento y comunicación</div>
+                </div>
+            </div>
+
+            <div id="admin-cotizaciones" class="content-section">
+                <div class="tutorial-content">
+                    <h2>📄 Oportunidades y Pipeline</h2>
+                    <p>Gestiona las oportunidades de venta en el pipeline de leads.</p>
+                    <h3>¿Qué es una Oportunidad?</h3>
+                    <p>Una oportunidad es un lead que ha avanzado en el proceso de venta. Representa un potencial negocio en diferentes etapas.</p>
+                    <h3>Etapas del Pipeline</h3>
+                    <ul>
+                        <li><strong>CONTACTO_INICIAL:</strong> Primer contacto con el prospecto</li>
+                        <li><strong>AGENDAMIENTO:</strong> Se ha agendado una cita</li>
+                        <li><strong>SEPARACION:</strong> El cliente ha separado o reservado</li>
+                        <li><strong>CIERRE_GANADO:</strong> Venta completada</li>
+                        <li><strong>CIERRE_PERDIDO:</strong> Oportunidad perdida</li>
+                        <li><strong>FIDELIZACION:</strong> Cliente en seguimiento post-venta</li>
+                    </ul>
+                    <h3>Cómo crear una Oportunidad</h3>
+                    <ol>
+                        <li>Ve a "Leads" y selecciona un lead</li>
+                        <li>Haz clic en "Convertir a Oportunidad"</li>
+                        <li>Completa: título, proyecto, propiedad, valor</li>
+                        <li>Establece la probabilidad de cierre</li>
+                        <li>Guarda la oportunidad</li>
+                    </ol>
+                    <h3>Cambiar Etapa de Oportunidad</h3>
+                    <ol>
+                        <li>Ve a "Oportunidades"</li>
+                        <li>Selecciona la oportunidad</li>
+                        <li>Haz clic en "Cambiar Etapa"</li>
+                        <li>Selecciona la nueva etapa</li>
+                        <li>Guarda los cambios</li>
+                    </ol>
+                    <div class="alert alert-info">💡 El historial de cambios de etapa se guarda automáticamente para seguimiento</div>
+                </div>
+            </div>
+
+            <div id="admin-reportes" class="content-section">
+                <div class="tutorial-content">
+                    <h2>📈 Reportes</h2>
+                    <p>Analiza datos y genera reportes de tu negocio.</p>
+                    <h3>Tipos de Reportes Disponibles</h3>
+                    <ul>
+                        <li><strong>Reporte de Leads:</strong> Análisis de prospectos por usuario y período</li>
+                        <li><strong>Reporte de Conversión:</strong> Tasa de conversión lead → oportunidad</li>
+                        <li><strong>Reporte de Actividad:</strong> Actividad por agente en un período</li>
+                        <li><strong>Reporte de Ventas Cerradas:</strong> Oportunidades ganadas</li>
+                        <li><strong>Reporte de Clientes Activos:</strong> Clientes con actividad reciente</li>
+                        <li><strong>Análisis de Tiempo y Eficiencia:</strong> Productividad por agente</li>
+                        <li><strong>Reporte de Fuente de Leads:</strong> Origen de los prospectos</li>
+                    </ul>
+                    <h3>Cómo generar un Reporte</h3>
+                    <ol>
+                        <li>Ve a "Reportes" desde el menú</li>
+                        <li>Selecciona el tipo de reporte que necesitas</li>
+                        <li>Especifica el período (fecha inicio y fin)</li>
+                        <li>Aplica filtros adicionales si es necesario (usuario, agente, etc.)</li>
+                        <li>Haz clic en "Generar"</li>
+                        <li>Revisa los datos en pantalla</li>
+                        <li>Descarga o exporta si lo necesitas</li>
+                    </ol>
+                    <h3>Información que Incluyen los Reportes</h3>
+                    <ul>
+                        <li>Cantidad de leads capturados</li>
+                        <li>Tasas de conversión</li>
+                        <li>Actividad por agente</li>
+                        <li>Ventas cerradas y en proceso</li>
+                        <li>Fuentes de leads más efectivas</li>
+                        <li>Eficiencia y productividad</li>
+                    </ul>
+                    <div class="alert alert-info">💡 Usa los reportes para identificar tendencias y tomar decisiones estratégicas</div>
+                </div>
+            </div>
+
+            <div id="admin-usuarios" class="content-section">
+                <div class="tutorial-content">
+                    <h2>👨‍💻 Gestión de Usuarios</h2>
+                    <p>Administra tu equipo de trabajo en el CRM.</p>
+                    <h3>Roles Disponibles</h3>
+                    <ul>
+                        <li><strong>ADMIN:</strong> Acceso total a todas las funciones del sistema</li>
+                        <li><strong>SUPERVISOR:</strong> Gestión de equipo, reportes y supervisión</li>
+                        <li><strong>AGENTE:</strong> Gestión de leads y oportunidades asignadas</li>
+                        <li><strong>ASISTENTE:</strong> Soporte administrativo y tareas básicas</li>
+                    </ul>
+                    <h3>Permisos por Rol</h3>
+                    <ul>
+                        <li><strong>ADMIN:</strong> Crear usuarios, gestionar roles, acceso a todos los datos, reportes completos</li>
+                        <li><strong>SUPERVISOR:</strong> Ver reportes del equipo, supervisar actividad, gestionar asignaciones</li>
+                        <li><strong>AGENTE:</strong> Crear y gestionar leads, oportunidades, ver sus propios datos</li>
+                        <li><strong>ASISTENTE:</strong> Crear contactos, soporte básico, tareas administrativas</li>
+                    </ul>
+                    <h3>Cómo crear un Usuario</h3>
+                    <ol>
+                        <li>Ve a "Usuarios" desde el menú (solo Admin)</li>
+                        <li>Haz clic en "Nuevo Usuario"</li>
+                        <li>Completa: nombre, correo, teléfono</li>
+                        <li>Asigna un rol según sus responsabilidades</li>
+                        <li>Guarda el usuario</li>
+                        <li>El usuario recibe un correo con sus credenciales</li>
+                    </ol>
+                    <h3>Gestionar Usuarios Existentes</h3>
+                    <ul>
+                        <li>Editar información del usuario</li>
+                        <li>Cambiar rol si es necesario</li>
+                        <li>Activar o desactivar usuario</li>
+                        <li>Resetear contraseña</li>
+                        <li>Ver historial de actividad</li>
+                    </ul>
+                    <div class="alert alert-info">💡 Asigna roles según responsabilidades y necesidades del equipo</div>
+                </div>
+            </div>
+
+            <!-- CLIENTE SECTIONS -->
+            <div id="cliente-inicio" class="content-section">
+                <h1>Portal del Cliente</h1>
+                <p class="subtitle">Gestiona tus cotizaciones y propiedades</p>
+
+                <div class="intro-card">
+                    <h2>👋 Bienvenido a tu Portal</h2>
+                    <p>Aquí puedes ver cotizaciones, explorar propiedades y gestionar tu perfil.</p>
+                </div>
+
+                <h2 class="section-title">Funcionalidades</h2>
+                <div class="modules-grid">
+                    <div class="module-card" onclick="mostrarSeccion('cliente-cotizaciones')">
+                        <div class="module-number">1</div>
+                        <h3>Mis Cotizaciones</h3>
+                        <p>Revisa todas tus cotizaciones</p>
+                        <div class="module-link">Ver tutorial →</div>
+                    </div>
+                    <div class="module-card" onclick="mostrarSeccion('cliente-propiedades')">
+                        <div class="module-number">2</div>
+                        <h3>Propiedades</h3>
+                        <p>Explora propiedades disponibles</p>
+                        <div class="module-link">Ver tutorial →</div>
+                    </div>
+                    <div class="module-card" onclick="mostrarSeccion('cliente-perfil')">
+                        <div class="module-number">3</div>
+                        <h3>Mi Perfil</h3>
+                        <p>Gestiona tu información</p>
+                        <div class="module-link">Ver tutorial →</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cliente-cotizaciones" class="content-section">
+                <div class="tutorial-content">
+                    <h2>📄 Acceso Web del Cliente</h2>
+                    <p>Accede a tu portal web personalizado para gestionar tu información.</p>
+                    <h3>¿Qué es el Acceso Web?</h3>
+                    <p>Es tu portal personalizado donde puedes ver información sobre tus oportunidades, proyectos y comunicarte con el equipo de ventas.</p>
+                    <h3>Cómo Acceder</h3>
+                    <ol>
+                        <li>El equipo de CRM te enviará un enlace de acceso</li>
+                        <li>Haz clic en el enlace o accede a través del navegador</li>
+                        <li>Ingresa tu correo y contraseña</li>
+                        <li>¡Ya estás dentro de tu portal!</li>
+                    </ol>
+                    <h3>¿Olvidaste tu Contraseña?</h3>
+                    <ol>
+                        <li>En la pantalla de login, haz clic en "¿Olvidaste tu contraseña?"</li>
+                        <li>Ingresa tu correo</li>
+                        <li>Recibirás un enlace para resetear tu contraseña</li>
+                        <li>Crea una nueva contraseña segura</li>
+                    </ol>
+                    <h3>Información Disponible en tu Portal</h3>
+                    <ul>
+                        <li>Tus datos personales y de contacto</li>
+                        <li>Proyectos en los que estás interesado</li>
+                        <li>Historial de comunicaciones</li>
+                        <li>Documentos compartidos</li>
+                    </ul>
+                    <div class="alert alert-info">💡 Si tienes problemas de acceso, contacta al equipo de CRM Delgado</div>
+                </div>
+            </div>
+
+            <div id="cliente-propiedades" class="content-section">
+                <div class="tutorial-content">
+                    <h2>🏠 Proyectos Disponibles</h2>
+                    <p>Explora los proyectos inmobiliarios disponibles.</p>
+                    <h3>¿Qué son los Proyectos?</h3>
+                    <p>Los proyectos son desarrollos inmobiliarios con diferentes propiedades y opciones de inversión.</p>
+                    <h3>Información de cada Proyecto</h3>
+                    <ul>
+                        <li>📍 Ubicación - Zona y dirección del proyecto</li>
+                        <li>💰 Precios - Rango de precios disponibles</li>
+                        <li>📐 Características - Tipos de unidades, servicios, amenidades</li>
+                        <li>📸 Galería - Fotos y renders del proyecto</li>
+                        <li>📋 Descripción - Detalles completos del proyecto</li>
+                    </ul>
+                    <h3>Cómo Explorar Proyectos</h3>
+                    <ol>
+                        <li>Accede a tu portal web</li>
+                        <li>Ve a la sección "Proyectos"</li>
+                        <li>Revisa los proyectos disponibles</li>
+                        <li>Haz clic en un proyecto para ver más detalles</li>
+                        <li>Contacta al equipo si tienes preguntas</li>
+                    </ol>
+                    <h3>Contactar sobre un Proyecto</h3>
+                    <ol>
+                        <li>Selecciona el proyecto de tu interés</li>
+                        <li>Haz clic en "Contactar" o "Más Información"</li>
+                        <li>Completa el formulario con tus datos</li>
+                        <li>Nuestro equipo te contactará</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div id="cliente-perfil" class="content-section">
+                <div class="tutorial-content">
+                    <h2>👤 Mi Perfil</h2>
+                    <p>Gestiona tu información personal y preferencias.</p>
+                    <h3>¿Qué puedes hacer?</h3>
+                    <ul>
+                        <li>Editar datos personales</li>
+                        <li>Cambiar contraseña</li>
+                        <li>Actualizar información de contacto</li>
+                        <li>Gestionar preferencias de comunicación</li>
+                    </ul>
+                    <h3>Cómo actualizar tu Perfil</h3>
+                    <ol>
+                        <li>Haz clic en "Mi Perfil"</li>
+                        <li>Edita los datos que necesites</li>
+                        <li>Haz clic en "Guardar Cambios"</li>
+                        <li>Recibirás confirmación por correo</li>
+                    </ol>
+                    <div class="alert alert-info">💡 Mantén tu información actualizada para mejor comunicación</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

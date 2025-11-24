@@ -1,0 +1,185 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                   CRM DELGADO - CENTRO DE APRENDIZAJE                     ║
+║                          GUÍA DE INICIO RÁPIDO                            ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+📌 ¿QUÉ ES ESTO?
+─────────────────────────────────────────────────────────────────────────────
+Este es un tutorial interactivo y profesional del sistema CRM Delgado.
+Incluye guías completas para administradores y clientes.
+
+🚀 CÓMO EMPEZAR
+─────────────────────────────────────────────────────────────────────────────
+
+OPCIÓN 1: Abrir directamente (más simple)
+  1. Haz doble clic en "index.html"
+  2. Se abrirá en tu navegador predeterminado
+  3. ¡Listo! Comienza a explorar
+
+OPCIÓN 2: Usar un servidor local (recomendado)
+  
+  Con Python 3:
+    - Abre PowerShell en esta carpeta
+    - Escribe: python -m http.server 8000
+    - Abre: http://localhost:8000
+  
+  Con Node.js:
+    - Abre PowerShell en esta carpeta
+    - Escribe: npx http-server
+    - Abre: http://localhost:8080
+
+📁 ARCHIVOS INCLUIDOS
+─────────────────────────────────────────────────────────────────────────────
+✓ index.html    - Estructura principal (19 KB)
+✓ styles.css    - Estilos y diseño (7.8 KB)
+✓ script.js     - Funcionalidad (2.3 KB)
+✓ README.md     - Documentación completa
+✓ INICIO_RAPIDO.txt - Este archivo
+
+👨‍💼 PARA ADMINISTRADORES
+─────────────────────────────────────────────────────────────────────────────
+Selecciona "Admin CRM" en el menú y aprende sobre:
+
+1. Dashboard
+   - Métricas en tiempo real
+   - Leads recientes
+   - Estadísticas del negocio
+
+2. Gestión de Leads
+   - Cómo capturar prospectos
+   - Estados y seguimiento
+   - Mejores prácticas
+
+3. Clientes
+   - Administración de cartera
+   - Información personal
+   - Historial de transacciones
+
+4. Cotizaciones
+   - Creación de propuestas
+   - Cálculo automático de cuotas
+   - Seguimiento de estado
+
+5. Reportes
+   - Análisis de datos
+   - Generación de reportes
+   - Exportación en PDF/Excel
+
+6. Usuarios
+   - Gestión del equipo
+   - Asignación de roles
+   - Control de permisos
+
+👤 PARA CLIENTES
+─────────────────────────────────────────────────────────────────────────────
+Selecciona "Portal Cliente" en el menú y aprende sobre:
+
+1. Mis Cotizaciones
+   - Revisión de propuestas
+   - Estados de cotizaciones
+   - Descarga de documentos
+
+2. Propiedades
+   - Búsqueda de propiedades
+   - Filtros y criterios
+   - Solicitud de cotizaciones
+
+3. Mi Perfil
+   - Actualización de datos
+   - Cambio de contraseña
+   - Preferencias de comunicación
+
+💡 CONSEJOS
+─────────────────────────────────────────────────────────────────────────────
+✓ Lee primero el módulo de Dashboard para entender la interfaz
+✓ Usa los filtros para encontrar información específica
+✓ Imprime los tutoriales como PDF (Ctrl+P)
+✓ Comparte este archivo con tu equipo
+✓ Actualiza regularmente para nuevas funciones
+
+🎨 CARACTERÍSTICAS
+─────────────────────────────────────────────────────────────────────────────
+✓ Interfaz profesional y moderna
+✓ Navegación intuitiva
+✓ Diseño responsive (móvil, tablet, desktop)
+✓ Sin necesidad de conexión a internet
+✓ Funciona en todos los navegadores
+✓ Fácil de personalizar
+
+📊 ESTRUCTURA DE CONTENIDO
+─────────────────────────────────────────────────────────────────────────────
+Cada módulo incluye:
+  • Explicación clara del concepto
+  • Pasos detallados
+  • Ejemplos prácticos
+  • Mejores prácticas
+  • Consejos útiles
+  • Alertas importantes
+
+🔍 NAVEGACIÓN
+─────────────────────────────────────────────────────────────────────────────
+Menú Lateral Izquierdo:
+  • Selecciona tu rol (Admin o Cliente)
+  • Elige el módulo que quieres aprender
+  • Los items activos se resaltan en amarillo
+
+Contenido Principal:
+  • Lee las instrucciones
+  • Sigue los pasos numerados
+  • Consulta las tablas y ejemplos
+  • Revisa los consejos y alertas
+
+🎯 OBJETIVOS DE APRENDIZAJE
+─────────────────────────────────────────────────────────────────────────────
+Después de completar este tutorial, podrás:
+
+Para Administradores:
+  ✓ Navegar el sistema CRM
+  ✓ Gestionar leads y clientes
+  ✓ Crear cotizaciones profesionales
+  ✓ Generar reportes
+  ✓ Administrar tu equipo
+
+Para Clientes:
+  ✓ Revisar tus cotizaciones
+  ✓ Explorar propiedades
+  ✓ Gestionar tu perfil
+  ✓ Descargar documentos
+
+📞 SOPORTE
+─────────────────────────────────────────────────────────────────────────────
+Para preguntas o sugerencias:
+  • Contacta al equipo de CRM Delgado
+  • Email: support@crmdelgado.com
+  • Teléfono: +51 (XXX) XXX-XXXX
+
+🔐 SEGURIDAD
+─────────────────────────────────────────────────────────────────────────────
+✓ Este tutorial no requiere credenciales
+✓ No se envían datos a servidores
+✓ Funciona completamente offline
+✓ Seguro para compartir con tu equipo
+
+📱 COMPATIBILIDAD
+─────────────────────────────────────────────────────────────────────────────
+Navegadores soportados:
+  ✓ Chrome/Chromium (recomendado)
+  ✓ Firefox
+  ✓ Safari
+  ✓ Edge
+  ✓ Opera
+
+Sistemas operativos:
+  ✓ Windows
+  ✓ macOS
+  ✓ Linux
+  ✓ Android
+  ✓ iOS
+
+═══════════════════════════════════════════════════════════════════════════════
+
+¡Listo para empezar! Abre index.html y comienza tu aprendizaje.
+
+Versión: 1.0
+Última actualización: Noviembre 2025
+CRM Delgado © 2025
